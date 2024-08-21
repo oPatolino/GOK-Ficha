@@ -1,0 +1,170 @@
+/* Layout base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.top-button-container a {
+    text-decoration: none;
+}
+
+.top-button-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.top-button-container button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#ability-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#add-ability {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#add-ability:hover {
+    background-color: #218838;
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.buttons-container button:hover {
+    background-color: #212529;
+}
+
+/* Estilo do template de habilidade */
+.ability {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.ability h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.inline-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.inline-group label {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    flex: 1 1 48%;
+}
+
+.inline-group input,
+.inline-group select {
+    margin-left: 5px;
+    width: calc(100% - 80px); /* Ajuste conforme necessário */
+}
+
+.generate-damage {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.generate-damage:hover {
+    background-color: #e0a800;
+}
+
+.damage-result {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.remove-ability {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.remove-ability:hover {
+    background-color: #c82333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .inline-group label {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}

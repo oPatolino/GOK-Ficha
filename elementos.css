@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #444;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #575757;
+}
+
+.elemento {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.elemento h2 {
+    margin: 0;
+}
+
+.nivel {
+    display: flex;
+    align-items: center;
+}
+
+.nivel label {
+    margin-right: 10px;
+}
+
+.nivel select {
+    width: 60px;
+    text-align: center;
+}
+
+.buttons-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+

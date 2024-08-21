@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-button-container">
+            <a href=""><button>Katanas</button></a>
+            <a href="Elementos.html"><button>Elementos</button></a>
+            <a href="Habilidades.html"><button>Habilidades</button></a>
+            <a href="Mochila.html"><button>Mochila</button></a>
+        </div>
+        <h1>Ficha de Personagem</h1>
+        <div class="info">
+            <div><label for="name">Nome:</label><input type="text" id="name" value="Arthur Pendragon"></div>
+            <div><label for="race">Raça:</label><select id="race"><option value="Humano">Humano</option><option value="Elfo">Elfo</option><option value="Anão">Anão</option><option value="Orc">Orc</option><option value="Goblin">Goblin</option><option value="Feral">Feral</option><option value="Golem">Golem</option><option value="Insectoide">Insectoide</option><option value="Ciclopes">Ciclopes</option><option value="Tritão">Tritão</option></select></div>
+            <div><label for="origin">Origem:</label><select id="origin"><option value="Cavaleiro">Cavaleiro</option><option value="Mago">Mago</option><option value="Ladino">Ladino</option><option value="Guerreiro">Guerreiro</option><option value="Outro">Outro</option></select></div>
+            <div><label for="coins">Moedas:</label><input type="number" id="coins" value="1000"></div>
+            <div><label for="level">Nível:</label><input type="number" id="level" value="1"></div>
+            <div><label for="xp">XP:</label><input type="number" id="xp" value="0"></div>
+        </div>
+        <div class="status">
+            <div class="status-block">
+                <h2>Status Básico</h2>
+                <div class="status-basic">
+                    <div class="attributes">
+                        <div class="attribute-group">
+                            <label for="agility-current">Agilidade:</label>
+                            <input type="number" id="agility-current" value="10">
+                            <label for="agility-bonus"> / </label>
+                            <input type="number" id="agility-bonus" value="5">
+                        </div>
+                        <div class="attribute-group">
+                            <label for="strength-current">Força:</label>
+                            <input type="number" id="strength-current" value="10">
+                            <label for="strength-bonus"> / </label>
+                            <input type="number" id="strength-bonus" value="5">
+                        </div>
+                        <div class="attribute-group">
+                            <label for="intellect-current">Intelecto:</label>
+                            <input type="number" id="intellect-current" value="10">
+                            <label for="intellect-bonus"> / </label>
+                            <input type="number" id="intellect-bonus" value="5">
+                        </div>
+                        <div class="attribute-group">
+                            <label for="max-health">Vida Máxima:</label>
+                            <input type="number" id="max-health" value="100">
+                            <label for="current-health">Atual:</label>
+                            <input type="number" id="current-health" value="100">
+                        </div>
+                        <div class="attribute-group">
+                            <label for="max-stamina">Estamina Máxima:</label>
+                            <input type="number" id="max-stamina" value="50">
+                            <label for="current-stamina">Atual:</label>
+                            <input type="number" id="current-stamina" value="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-block">
+                <h2>Status de Sentidos</h2>
+                <div class="senses">
+                    <div class="column">
+                        <div>
+                            <label for="touch-current">Tato:</label>
+                            <input type="number" id="touch-current" value="10">
+                        </div>
+                        <div>
+                            <label for="vision-current">Visão:</label>
+                            <input type="number" id="vision-current" value="10">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <label for="hearing-current">Audição:</label>
+                            <input type="number" id="hearing-current" value="10">
+                        </div>
+                        <div>
+                            <label for="luck-current">SG:</label>
+                            <input type="number" id="luck-current" value="10" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-block">
+                <h2>Status de Combate</h2>
+                <div class="combat">
+                    <div>
+                        <label for="physical-resistance-current">Resistência Física:</label>
+                        <input type="number" id="physical-resistance-current" value="10">
+                        <label for="physical-resistance-bonus"> / </label>
+                        <input type="number" id="physical-resistance-bonus" value="5">
+                    </div>
+                    <div>
+                        <label for="magical-resistance-current">Resistência Mágica:</label>
+                        <input type="number" id="magical-resistance-current" value="10">
+                        <label for="magical-resistance-bonus"> / </label>
+                        <input type="number" id="magical-resistance-bonus" value="5">
+                    </div>
+                    <div>
+                        <label for="physical-efficiency-current">Eficiência Física:</label>
+                        <input type="number" id="physical-efficiency-current" value="10">
+                        <label for="physical-efficiency-bonus"> / </label>
+                        <input type="number" id="physical-efficiency-bonus" value="5">
+                    </div>
+                    <div>
+                        <label for="magical-efficiency-current">Eficiência Mágica:</label>
+                        <input type="number" id="magical-efficiency-current" value="10">
+                        <label for="magical-efficiency-bonus"> / </label>
+                        <input type="number" id="magical-efficiency-bonus" value="5">
+                    </div>
+                    <div>
+                        <label for="speed-current">Velocidade:</label>
+                        <input type="number" id="speed-current" value="10">
+                        <label for="speed-bonus"> / </label>
+                        <input type="number" id="speed-bonus" value="5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button onclick="loadData()">Carregar Ficha</button>
+            <button onclick="saveData()">Salvar Ficha</button>
+            <button onclick="clearData()">Limpar Ficha</button>
+        </div>
+        <div class="dice-container">
+            <div>
+                <label for="d6-quantity">D6:</label>
+                <input type="number" id="d6-quantity" value="1" min="1">
+                <button onclick="rollDice(6)">Rolar D6</button>
+                <div id="d6-results"></div>
+            </div>
+            <div>
+                <label for="d8-quantity">D8:</label>
+                <input type="number" id="d8-quantity" value="1" min="1">
+                <button onclick="rollDice(8)">Rolar D8</button>
+                <div id="d8-results"></div>
+            </div>
+            <div>
+                <label for="d10-quantity">D10:</label>
+                <input type="number" id="d10-quantity" value="1" min="1">
+                <button onclick="rollDice(10)">Rolar D10</button>
+                <div id="d10-results"></div>
+            </div>
+            <div>
+                <label for="d12-quantity">D12:</label>
+                <input type="number" id="d12-quantity" value="1" min="1">
+                <button onclick="rollDice(12)">Rolar D12</button>
+                <div id="d12-results"></div>
+            </div>
+            <div>
+                <label for="d20-quantity">D20:</label>
+                <input type="number" id="d20-quantity" value="1" min="1">
+                <button onclick="rollDice(20)">Rolar D20</button>
+                <div id="d20-results"></div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </div>
+</body>
+</html>

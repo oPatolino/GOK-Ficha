@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha da Mochila</title>
+    <link rel="stylesheet" href="mochila.css">
+</head>
+<body>
+    <div class="nav-container">
+        <a href="Katanas.html" class="nav-button">Katanas</a>
+        <a href="Elementos.html" class="nav-button">Elementos</a>
+        <a href="index.html" class="nav-button">Ficha</a>
+        <a href="Habilidades.html" class="nav-button">Habilidades</a>
+    </div>
+
+    <div class="container">
+        <h1>Ficha da Mochila</h1>
+        <div class="controls">
+            <input type="text" id="item-name" placeholder="Nome do item">
+            <input type="text" id="item-description" placeholder="Descrição do item">
+            <input type="number" id="item-quantity" placeholder="Quantidade" min="1" value="1">
+            <button id="add-button">Adicionar Item</button>
+        </div>
+
+        <ul class="item-list" id="item-list">
+            <!-- Itens serão adicionados aqui -->
+        </ul>
+
+        <div class="controls">
+            <button id="clear-button">Limpar Mochila</button>
+            <button id="save-button">Salvar Mochila</button>
+            <button id="load-button">Carregar Mochila</button>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <script src="mochila.js"></script>
+</body>
+</html>

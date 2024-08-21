@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Habilidades</title>
+    <link rel="stylesheet" href="habilidades.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-button-container">
+            <a href="index.html"><button>Ficha</button></a>
+            <a href="Katanas.html"><button>Katanas</button></a>
+            <a href="Elementos.html"><button>Elementos</button></a>
+            <a href="Mochila.html"><button>Mochila</button></a>
+        </div>
+        <h2>Ficha de Habilidades</h2>
+        <div id="ability-container">
+            <button id="add-ability">Adicionar Habilidade</button>
+        </div>
+        <div class="buttons-container">
+            <button id="save-button">Salvar</button>
+            <button id="load-button">Carregar</button>
+            <button id="clear-button">Limpar</button>
+        </div>
+    </div>
+
+    <template id="ability-template">
+        <div class="ability">
+            <h3>Nova Habilidade</h3>
+            <div class="inline-group">
+                <label>Nome: <input type="text" class="name"></label>
+            </div>
+            <div class="inline-group">
+                <label>Dano: 
+                    <select class="damage">
+                        <option value="D4">D4</option>
+                        <option value="D6">D6</option>
+                        <option value="D8">D8</option>
+                        <option value="D10">D10</option>
+                        <option value="D12">D12</option>
+                        <option value="D20">D20</option>
+                    </select>
+                </label>
+                <label>Quantidade: 
+                    <select class="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <label>Bônus: 
+                    <select class="bonus">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+            </div>
+            <div class="inline-group">
+                <label>Estamina: <input type="number" class="stamina"></label>
+                <label>Nível: <input type="number" class="level" min="1" max="5"></label>
+                <label>Elemento: <input type="text" class="element"></label>
+            </div>
+            <div class="inline-group">
+                <label>Efeitos: <input type="text" class="effects"></label>
+                <label>Alcance: <input type="text" class="range"></label>
+            </div>
+            <button class="generate-damage">Gerar Dano</button>
+            <div class="damage-result"></div>
+            <button class="remove-ability">Remover Habilidade</button>
+        </div>
+    </template>
+
+    <script src="habilidades.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.top-button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.top-button-container a {
+    text-decoration: none;
+}
+
+.top-button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-button-container button:hover {
+    background-color: #555;
+}
+
+.katana-container {
+    margin-top: 20px;
+}
+
+.katana {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.katana-info input,
+.katana-info select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px);
+}
+
+.katana-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.resultado-ataque {
+    font-weight: bold;
+    color: #007b00; /* Verde para indicar sucesso */
+    margin-left: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #555;
+}
